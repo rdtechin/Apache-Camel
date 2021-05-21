@@ -1,0 +1,30 @@
+{
+    "topic":"topic1",
+    "key":null,
+    "value":{
+       "messageInformation":{
+          "sender":"Dhruv Sahu",
+          "trackingNumber":"123456789101112"
+       },
+       "event":{
+          "id":"120",
+          "typeCode":"Claim",
+          "date":"5/11/2021 10:41:57 AM"
+       },
+       "claim":{
+          "id":"12DCV0201023",
+          "number":"123456789D",
+          "statusCode":"OPEN",
+          "broadLineOfBusinessCode":"J033",
+          "lineOfBusinessCode":"K1004",
+          "coverage":{
+             "id":"",
+             "number":"",
+             "statusCode":"",
+             "lineOfBusinessSubCode":""
+          }
+       }
+    },
+    "partition":0,
+    "offset":12065
+ }

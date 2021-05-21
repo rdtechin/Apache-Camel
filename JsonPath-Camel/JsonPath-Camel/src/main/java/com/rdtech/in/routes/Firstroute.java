@@ -4,7 +4,7 @@ import org.apache.camel.builder.RouteBuilder;
 import org.springframework.stereotype.Component;
 
 
-@Component
+//@Component
 public class Firstroute extends RouteBuilder {
 
 	@Override
@@ -12,9 +12,7 @@ public class Firstroute extends RouteBuilder {
 		
 		from("file:files/input")
 		.log("${body}")
-		.setProperty("plz")
-		.jsonpath("$.plz")
-		.log("PLZ : ${exchangeProperty.plz}")
+		.setProperty("number").jsonpath("$.value.claim.number").log("number : ${exchangeProperty.number} ")
 		.to("file:files/output")
 		;
 	}
