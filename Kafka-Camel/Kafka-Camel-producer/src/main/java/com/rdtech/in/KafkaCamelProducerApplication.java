@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class KafkaCamelApplication {
+public class KafkaCamelProducerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(KafkaCamelApplication.class, args);
+		SpringApplication.run(KafkaCamelProducerApplication.class, args);
 	}
 
 }

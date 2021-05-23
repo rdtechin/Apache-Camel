@@ -5,18 +5,22 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.4.5</version>
+		<version>2.4.7-SNAPSHOT</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.rdtech.in</groupId>
-	<artifactId>file-reader-camel</artifactId>
+	<artifactId>Kafka-Camel-consumer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>file-reader-camel</name>
-	<description>this application reads files from input folde and output them into a output folder</description>
+	<name>Kafka-Camel-consumer</name>
+	<description>this application deals with consuming kafka messages via apache camel</description>
 	<properties>
-		<java.version>1.8</java.version>
+		<java.version>16</java.version>
+		<camel.version>3.7.0</camel.version>
 	</properties>
 	<dependencies>
+	
+
+        
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
@@ -28,21 +32,14 @@
 		<dependency>
 			<groupId>org.apache.camel.springboot</groupId>
 			<artifactId>camel-spring-boot-starter</artifactId>
-			<version>3.9.0</version>
+			<version>${camel.version}</version>
 		</dependency>
-<!-- https://mvnrepository.com/artifact/org.apache.camel/camel-jsonpath -->
-<!-- <dependency>
-    <groupId>org.json</groupId>
-    <artifactId>json</artifactId>
-    <version>20180130</version>
-</dependency>
- -->
-<!-- <dependency>
-  <groupId>org.apache.camel.springboot</groupId>
-  <artifactId>camel-jsonpath-starter</artifactId>
-  <version>3.9.0</version>
-  use the same version as your Camel core version
-</dependency> -->
+
+		<dependency>
+			<groupId>org.apache.camel.springboot</groupId>
+			<artifactId>camel-kafka-starter</artifactId>
+			<version>${camel.version}</version>
+		</dependency>
 
 
 		<dependency>
@@ -66,5 +63,41 @@
 			</plugin>
 		</plugins>
 	</build>
+	<repositories>
+		<repository>
+			<id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>https://repo.spring.io/milestone</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>spring-snapshots</id>
+			<name>Spring Snapshots</name>
+			<url>https://repo.spring.io/snapshot</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>https://repo.spring.io/milestone</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</pluginRepository>
+		<pluginRepository>
+			<id>spring-snapshots</id>
+			<name>Spring Snapshots</name>
+			<url>https://repo.spring.io/snapshot</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+		</pluginRepository>
+	</pluginRepositories>
 
 </project>
