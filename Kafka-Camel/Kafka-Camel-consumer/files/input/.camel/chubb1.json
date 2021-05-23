@@ -1,0 +1,50 @@
+{
+      "topic":"common.claims.business-event.fnol.v1",
+      "key":null,
+      "value":{
+         "messageInformation":{
+            "businessPurposeTypeCode":"",
+            "effectiveDate":"5/11/2021 10:42:25 AM",
+            "sender":"CFN",
+            "trackingNumber":"8B85C486BC5616F8"
+         },
+         "event":{
+            "id":"120",
+            "typeCode":"Claim",
+            "date":"5/11/2021 10:41:57 AM",
+            "categoryCode":"Business",
+            "eventName":"FNOLComplete"
+         },
+         "claim":{
+            "id":"8D56F0B4DA181DA2",
+            "number":"040521004015",
+            "statusCode":"OPEN",
+            "broadLineOfBusinessCode":"C033",
+            "lineOfBusinessCode":"LB04",
+            "coverage":{
+               "id":"",
+               "number":"",
+               "statusCode":"",
+               "lineOfBusinessSubCode":""
+            }
+         },
+         "party":[
+            {
+               "partyIdentity":[
+                  {
+                     "typeId":"73A0699F10C41669",
+                     "typeCode":"PartyId"
+                  }
+               ],
+               "partyRole":[
+                  {
+                     "code":"CO",
+                     "description":"Claim Owner"
+                  }
+               ]
+            }
+         ]
+      },
+      "partition":0,
+      "offset":12065
+}
