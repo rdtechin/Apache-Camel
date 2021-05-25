@@ -1,5 +1,5 @@
-~/kafka/bin/kafka-topics.sh --zookeeper 3.229.142.46:2181 --create --topic KafkaTopic --replication-factor 1 --partitions 2
+~/kafka/bin/kafka-topics.sh --zookeeper ##your public ip##:2181 --create --topic KafkaTopic --replication-factor 1 --partitions 2
 
-~/kafka/bin/kafka-console-consumer.sh --bootstrap-server 3.229.142.46:9092 --topic KafkaTopic
+~/kafka/bin/kafka-console-consumer.sh --bootstrap-server ##your public ip##:9092 --topic KafkaTopic
 
-~/kafka/bin/kafka-console-producer.sh --broker-list 3.229.142.46:9092 --topic KafkaTopic
+~/kafka/bin/kafka-console-producer.sh --broker-list ##your public ip##:9092 --topic KafkaTopic
