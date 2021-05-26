@@ -9,13 +9,13 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.rdtech.in</groupId>
-	<artifactId>Kafka-Camel-consumer</artifactId>
+	<artifactId>Rest-api-route</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Kafka-Camel-consumer</name>
-	<description>this application deals with consuming kafka messages via apache camel</description>
+	<name>Rest-api-route</name>
+	<description>this is a camel router for rest api calling</description>
 	<properties>
 		<java.version>16</java.version>
-		<camel.version>3.7.0</camel.version>
+	    <camel.version>3.7.0</camel.version>
 	</properties>
 	<dependencies>
 	
@@ -88,7 +88,6 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
 	<build>
 		<plugins>
 			<plugin>

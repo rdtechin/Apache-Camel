@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RestApiCallCamelApplication {
+public class RestApiRouteApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(RestApiCallCamelApplication.class, args);
+		SpringApplication.run(RestApiRouteApplication.class, args);
 	}
 
 }

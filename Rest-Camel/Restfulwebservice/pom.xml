@@ -9,83 +9,34 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.rdtech.in</groupId>
-	<artifactId>Kafka-Camel-consumer</artifactId>
+	<artifactId>Restfulwebservice</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Kafka-Camel-consumer</name>
-	<description>this application deals with consuming kafka messages via apache camel</description>
+	<name>Restfulwebservice</name>
+	<description>this is a restful webservice </description>
 	<properties>
 		<java.version>16</java.version>
-		<camel.version>3.7.0</camel.version>
 	</properties>
 	<dependencies>
-	
-	<!-- https://mvnrepository.com/artifact/org.apache.camel/camel-jsonpath -->
-
-	
-
-        
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.apache.camel.springboot</groupId>
-			<artifactId>camel-spring-boot-starter</artifactId>
-			<version>${camel.version}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.apache.camel.springboot</groupId>
-			<artifactId>camel-kafka-starter</artifactId>
-			<version>${camel.version}</version>
-		</dependency>
 		
-		<dependency>
-			<groupId>org.apache.camel.springboot</groupId>
-			<artifactId>camel-http-starter</artifactId>
-			<version>${camel.version}</version>
-		</dependency>
-		
-		<dependency>
-			<groupId>org.apache.camel.springboot</groupId>
-			<artifactId>camel-rest-starter</artifactId>
-			<version>${camel.version}</version>
-		</dependency>
-		
-		
-		<dependency>
-			<groupId>org.apache.camel.springboot</groupId>
-			<artifactId>camel-jackson-starter</artifactId>
-			<version>${camel.version}</version>
-		</dependency>
-		
-		
-		<dependency>
-    <groupId>org.json</groupId>
-    <artifactId>json</artifactId>
-    <version>20180130</version>
-</dependency>
-<dependency>
-            <groupId>com.googlecode.json-simple</groupId>
-            <artifactId>json-simple</artifactId>
-            <version>1.1.1</version>
-        </dependency>
-
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 			<optional>true</optional>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
 		</dependency>
 	</dependencies>
 
