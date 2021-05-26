@@ -3,11 +3,11 @@ package com.rdtech.in.Processor;
 import org.apache.camel.Exchange;
 import org.apache.camel.Processor;
 
-import com.rdtech.in.bean.responsebean;
+import com.rdtech.in.bean.responsebean1;
 
 public class numbergenerator  implements Processor {
 	
-	responsebean ob= new responsebean();
+	responsebean1 ob= new responsebean1();
 	 
 	int gen=1;
 	

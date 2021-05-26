@@ -5,10 +5,10 @@ import org.apache.camel.model.dataformat.JsonLibrary;
 import org.springframework.stereotype.Component;
 
 import com.rdtech.in.Processor.numbergenerator;
-import com.rdtech.in.bean.responsebean;
+import com.rdtech.in.bean.responsebean1;
 import com.rdtech.in.splitter.JsonArraySplitter;
 
-//@Component
+@Component
 public class Kafkacamelconsumer  extends RouteBuilder {
 
 	@Override
@@ -23,7 +23,7 @@ public class Kafkacamelconsumer  extends RouteBuilder {
 		
 		.split(method(JsonArraySplitter.class))
 		// .process(new numbergenerator())
-		.unmarshal().json(JsonLibrary.Jackson,responsebean.class)
+		.unmarshal().json(JsonLibrary.Jackson,responsebean1.class)
        .log("${body}");
 
 	}
