@@ -1,0 +1,1 @@
+This application code depicts of designing the REST API using Apache Camel
